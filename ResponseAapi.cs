@@ -10,7 +10,7 @@ namespace Pixstock.Base.AppIf.Sdk
     {
         public ResponseAapi()
         {
-            this.Rel = new Dictionary<string, object>();
+            this.Rel = new Dictionary<string, string>();
             this.Link = new Dictionary<string, object>();
         }
 
@@ -30,7 +30,7 @@ namespace Pixstock.Base.AppIf.Sdk
         /// 関連リソースを取得、または設定します。
         /// </summary>
         /// <returns></returns>
-        public Dictionary<string, object> Rel { get; set; }
+        public Dictionary<string, string> Rel { get; set; }
 
         /// <summary>
         /// リンクリソースを取得、または設定します。
